@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  db-postgres-resultados:
+    image: postgres
+    ports:
+      - 5432:5432
+    container_name: "db-postgres-resultados"
+    restart: always
+    volumes:
+      - ./banco-de-dados-resultado:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+
+volumes:
+  db-postgres-resultados:

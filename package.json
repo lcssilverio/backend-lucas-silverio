@@ -1,0 +1,23 @@
+{
+  "name": "backend-node-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lcssilverio/backend-node-prisma.git",
+  "author": "Lucas Silverio <lcs.silva.silverio@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "prisma": "^5.12.1",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "sucrase": "^3.35.0"
+  }
+}
