@@ -1,5 +1,15 @@
 import { prisma } from "../services/prisma"
 
+export const getResult = async (data) => {
+  const result = await prisma.resultado.findMany({
+    where: {
+      bimestre: data.bimestre,
+      disciplina: data.disciplina,
+    },
+  })
+  return result
+}
+
 export const createResult = async (data) => {
   const result = await prisma.resultado.create({
     data,
