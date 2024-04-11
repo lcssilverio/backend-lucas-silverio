@@ -32,8 +32,8 @@ enum Bimestre {
 }
 
 enum Disciplina {
-  BIOLOGIA
-  ARTES
-  GEOGRAFIA
-  SOCIOLOGIA
+  Biologia
+  Artes
+  Geografia
+  Sociologia
 }
