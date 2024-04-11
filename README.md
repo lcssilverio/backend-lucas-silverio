@@ -15,6 +15,10 @@ Para iniciar o projeto é necessário ter o Docker aberto e rodar o docker-compo
 
 ### `sudo docker-compose up`
 
+Assim que o banco estiver rodando é necessário criar a tabela utilizando o comando:
+
+### `yarn prisma migrate dev --name init`
+
 Após o banco estiver funcionando é necessário iniciar o projeto, com o comando:
 
 ### `yarn start`
